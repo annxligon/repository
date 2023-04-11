@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+} 
+
+body {
+    width:auto;
+    background-color: white;
+}
+
+#wrapper {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 400px 400px 60px;
+    grid-template-areas:
+        "kopfzeile kopfzeile kopfzeile kopfzeile"
+        "content content content content"
+        "content content content content"
+        "fusszeile fusszeile fusszeile fusszeile";
+    gap: 0;
+    
+}
+
+header {
+    background-color: gray;
+    grid-area: kopfzeile;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+#logo {
+    width: 80%;
+    padding-left: 3%;
+    cursor: pointer;
+}
+
+#home-button {
+    cursor: pointer;
+}
+
+header nav {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h2 {
+    color: white;
+    margin-top: 170px;
+    padding-left: 50px;
+    position: absolute;
+}
+
+#intro {
+    color: white;
+    margin-top: 200px;
+    grid-area: content;
+    position: absolute;
+}
+
+#headerbild {
+    grid-area: content;
+    width: fit-content;
+}
+
+#content-wrapper {
+    overflow: hidden;
+}
+
+main {
+    background-color: darkgray;
+    grid-area: content;
+}
+
+article {
+    
+    height: 100px;
+    width: 500px;
+    padding-left: 50px;
+}
+
+
+
+footer {
+    background-color: lightgray;
+    grid-area: fusszeile;
+}

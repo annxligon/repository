@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    #wrapper {
+        width: 1400px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px 800px 800px 400px;
+        grid-template-areas:
+        "kopfzeile kopfzeile kopfzeile kopfzeile kopfzeile"
+        "content content content content content"
+        "content content content content content"
+        "fusszeile fusszeile fusszeile fusszeile aside";
+        gap: 0;
+        padding: 0;
+    }
+
+    #headerbild {
+        width: 1400px;
+        display: flex;
+        grid-area: kopfzeile;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+}

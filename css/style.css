@@ -1,0 +1,14 @@
+* {
+    font-family: "SchibstedGrotesk", Verdana, sans-serif;
+    letter-spacing: -0.05em;
+    font-size: 0.95rem
+}
+
+h3 {
+    margin: 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: larger; 
+}
