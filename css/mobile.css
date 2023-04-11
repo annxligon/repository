@@ -6,7 +6,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 400px 200px 1350px 100px;
+    grid-template-rows: repeat(auto-fit, minmax(0px,1fr));
     grid-template-areas:
         "kopfzeile kopfzeile kopfzeile kopfzeile"
         "banner banner banner banner"

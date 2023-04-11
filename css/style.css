@@ -1,7 +1,7 @@
 * {
     font-family: "SchibstedGrotesk", Verdana, sans-serif;
     letter-spacing: -0.05em;
-    font-size: 0.95rem
+    font-size: 1em
 }
 
 header {
@@ -89,6 +89,10 @@ footer {
 
 #tipp {
     height: 50px;
+}
+
+#tipptext {
+    margin-left: 20px;
 }
 
 

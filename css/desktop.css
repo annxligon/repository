@@ -3,7 +3,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 60px 700px 1450px 400px;
+        grid-template-rows: repeat(auto-fit, minmax(0px,1fr));
         grid-template-areas:
         "kopfzeile kopfzeile kopfzeile kopfzeile kopfzeile"
         "banner banner banner banner banner"
@@ -47,7 +47,7 @@
 
     h2 {
         margin-top: 20%;
-        font-size: 10rem;
+        font-size: 8rem;
     }
 
     article {
