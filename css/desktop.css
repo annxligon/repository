@@ -21,6 +21,12 @@
         width: 100%
     }
 
+    #banner {
+        grid-area: banner;
+        width: 100%;
+        height: auto;
+    }
+
     #menu {
         display: none;
     }
@@ -53,6 +59,10 @@
     article {
         width: 90%;
         font-size: large;
+        position: relative;
+        padding-left: 50px;
+        width: 90%;
+        grid-area: content;
     }
 
     #intro {
@@ -72,18 +82,5 @@
     #variante_ablauf, #variante_metadaten {
         width: 380px;
         margin-top: 30px;
-    }
-
-    #banner {
-        grid-area: banner;
-        width: 100%;
-        height: auto;
-    }
-
-    article {
-        position: relative;
-        padding-left: 50px;
-        width: 90%;
-        grid-area: content;
     }
 }
