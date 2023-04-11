@@ -1,27 +1,89 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     #wrapper {
-        width: 1400px;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 60px 800px 800px 400px;
+        grid-template-rows: 60px 700px 1450px 400px;
         grid-template-areas:
         "kopfzeile kopfzeile kopfzeile kopfzeile kopfzeile"
-        "content content content content content"
-        "content content content content content"
-        "fusszeile fusszeile fusszeile fusszeile aside";
+        "banner banner banner banner banner"
+        "content content content content seite"
+        "fusszeile fusszeile fusszeile fusszeile fusszeile";
         gap: 0;
         padding: 0;
     }
 
-    #headerbild {
-        width: 1400px;
-        display: flex;
+    header {
         grid-area: kopfzeile;
+    }
+
+    #headerbild {
+        width: 100%
     }
 
     #menu {
         display: none;
     }
 
+    .breadcrumb {
+        align-items: center;
+        display: flex;
+        position: absolute;
+        padding-left: 50px;
+        color: white;
 
+    }
+
+    .breadcrumb__item {
+        margin: 0.5rem; 
+    }
+    
+    .breadcrumb__item:not(:last-child)::after {
+        right: 0;
+        top: 0;
+        transform: translate(0.5rem, 0px);
+        content: '/';
+    }
+
+    h2 {
+        margin-top: 20%;
+        font-size: 10rem;
+    }
+
+    article {
+        width: 90%;
+        font-size: large;
+    }
+
+    #intro {
+       margin-top: 40%;
+    }
+
+    #allgemein {
+        padding-top: 50px;
+    }
+
+    #variants {
+        display: flex;
+        justify-content : space-between;
+        flex-wrap : wrap
+    }
+
+    #variante_ablauf, #variante_metadaten {
+        width: 380px;
+        margin-top: 30px;
+    }
+
+    #banner {
+        grid-area: banner;
+        width: 100%;
+        height: auto;
+    }
+
+    article {
+        position: relative;
+        padding-left: 50px;
+        width: 90%;
+        grid-area: content;
+    }
 }

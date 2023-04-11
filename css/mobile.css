@@ -2,31 +2,19 @@
     box-sizing: border-box;
 } 
 
-body {
-    width:auto;
-    background-color: white;
-}
-
 #wrapper {
-    width: 600px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 400px 400px 60px;
+    grid-template-rows: 60px 400px 200px 1350px 100px;
     grid-template-areas:
         "kopfzeile kopfzeile kopfzeile kopfzeile"
-        "content content content content"
+        "banner banner banner banner"
+        "seite seite seite seite"
         "content content content content"
         "fusszeile fusszeile fusszeile fusszeile";
     gap: 0;
     
-}
-
-header {
-    background-color: gray;
-    grid-area: kopfzeile;
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
 }
 
 #logo {
@@ -35,57 +23,41 @@ header {
     cursor: pointer;
 }
 
-#home-button {
+#menu {
     cursor: pointer;
 }
 
-header nav {
-    padding-right: 10px;
-    cursor: pointer;
+#menu:hover {
+    opacity: 0.5;
+    transition: 0.3s;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 h2 {
     color: white;
-    margin-top: 170px;
+    margin-top: 30%;
     padding-left: 50px;
     position: absolute;
 }
 
 #intro {
     color: white;
-    margin-top: 200px;
-    grid-area: content;
+    margin-top: 38%;
     position: absolute;
+    padding-left: 50px;
 }
 
 #headerbild {
-    grid-area: content;
-    width: fit-content;
+    width: 100%
+}
+
+.breadcrumb {
+    display: none;
 }
 
 #content-wrapper {
     overflow: hidden;
-}
-
-main {
-    background-color: darkgray;
-    grid-area: content;
-}
-
-article {
-    
-    height: 100px;
-    width: 500px;
-    padding-left: 50px;
-}
-
-
-
-footer {
-    background-color: lightgray;
-    grid-area: fusszeile;
 }

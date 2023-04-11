@@ -4,11 +4,94 @@
     font-size: 0.95rem
 }
 
+header {
+    background-color: lightgrey;
+    grid-area: kopfzeile;
+    padding-top: 15px;
+    padding: 15px;
+}
+
 h3 {
     margin: 0;
 }
 
 h2 {
     text-transform: uppercase;
-    font-size: larger; 
+    font-size: 200%; 
 }
+
+h1 {
+    padding-top: 30px;
+}
+
+#home-button {
+    height: 33px;
+    cursor: pointer;
+}
+
+#home-button:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+    height: 33px;
+}
+
+header {
+    grid-area: kopfzeile;
+}
+
+
+
+article {
+    position: relative;
+    padding-left: 50px;
+    width: 90%;
+    grid-area: content;
+}
+
+#variants {
+    text-align: center;
+    position: relative;
+}
+
+#ablauf, #meta {
+    width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content : space-between;
+    grid-area: kopfzeile;
+}
+
+#banner {
+    grid-area: banner;
+    margin: 0;
+    width: 100%;
+}
+
+#content {
+    grid-area: content;
+}
+
+aside {
+    grid-area: seite;
+    background-color: lightgrey;
+    padding-left: 50px;
+}
+
+footer {
+    grid-area: fusszeile;
+    background-color: rgb(226, 225, 225);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tipp {
+    height: 50px;
+}
+
+
+
+
+

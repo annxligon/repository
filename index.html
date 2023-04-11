@@ -14,19 +14,113 @@
 <body>
     <div id="wrapper">
         <header>
-            <div id="home-button"><img src="img/home-icon-silhouette.png" alt="home"></div>
-            <div id="logo"><h3>Lexikon</h3></div>
+            <img id="home-button" src="img/home-icon-silhouette.png" alt="home">
+            <h3>Programmiersprachen-Lexikon</h3>
             <nav><img id="menu" src="img/menu-offnen.png" alt="menu"></nav>
         </header>
-            <main>
-                <h2>Repository</h2>
-                <article id="intro">Der Begriff Repository steht für <b>Aufbewahrungsort</b> oder <b>Behälter</b>. In der Softwaretechnik handelt es sich um eine zentrale Ablage in dem digitale Daten, Dokumente, Objekte und Programme mit ihren Metadaten verwaltet werden.</article>
-                <img id="headerbild" src="img/repository-750x390.jpg" alt="menu">
-                <article></article>
-            </main>
-            <aside></aside>
-        
-        <footer></footer>
+
+        <div id="banner">
+            <div class="breadcrumb">
+                <div class="breadcrumb__item">Lexikon</div>
+                <div class="breadcrumb__item">Repository</div>
+            </div>
+            <h2>Repository</h2>
+            <article id="intro">Der Begriff Repository steht für <b>Aufbewahrungsort</b> oder <b>Behälter</b>. In
+                der
+                Softwaretechnik handelt es sich um eine zentrale Ablage in dem digitale Daten, Dokumente, Objekte
+                und
+                Programme mit ihren Metadaten verwaltet werden.</article>
+            <img id="headerbild" src="img/header.jpg" alt="menu">
+        </div>
+        <div id="content">
+            <article id="allgemein">
+                <h1>Allgemeines</h1>
+                <p>Die Basis von Repository Systemen bildet in den meisten Fällen eine Datenbank, die lokal auf einer
+                    Festplatte, zentral auf einem Server oder verteilt in einem CDN-System organisiert sein kann. Hinzu
+                    kommen sogenannte Data Dictionaries (Datenwörterbuch, Datenkatalog), die die Darstellungsformen,
+                    Objektdefinitionen und die Beziehungen zwischen einzelnen Datenobjekten umfassen. Die Datenkataloge
+                    enthalten nicht etwa die zu speichernden Datensätze und Anwendungsdaten, sondern Informationen über
+                    diese Daten, sprich Metadaten. Bevor physische Daten gespeichert werden können, muss das
+                    zugrundegelegte Datenmodell den logischen und konzeptionellen Rahmen definieren. Diese Schemata
+                    bestimmen, wie die Struktur der Datenbank angelegt ist und wie die Modellierung der Daten erfolgen
+                    soll.</p>
+                <p>In der Softwareentwicklung wurden derartige Datenmodelle zunehmend mit Metadaten ausgezeichnet, um
+                    Entwicklern einen umfassenden Zugang zu allen relevanten Informationen zu geben. Aus diesen Data
+                    Dictionaries sind die heutigen Versionsverwaltungssysteme und Repositories entstanden. Mit
+                    erweiterten Funktionalitäten erlauben sie es, auch eigene Datenmodelle zu bestimmen und
+                    verschiedenste Schnittstellen und Tools zu nutzen. Je nach Ansatz unterstützen sie Entwickler auch
+                    bei der Kreation des Quellcodes, dem Testing und der Auslieferung von fertigen Programmen und
+                    kombinieren somit Datenbanken, Versionsverwaltungen und Entwicklungsumgebungen zu einem Repository,
+                    auf das alle Projektbeteiligten zugreifen können.</p>
+            </article>
+
+            <article id="examples">
+                <h1>Arten von Repositories</h1>
+                <div id="variants">
+                    <div id="variante_ablauf">
+                        <img id="ablauf" src="img/ablauf.png" alt="ablauf">
+                        <p><b>Repository zur Versionsverwaltung</b></p>
+                        <p>In der Entwicklung von Games, Software, Apps und anderen IT-Produkten kommen Repositories
+                            vielfach
+                            zum Einsatz. Die klassische Variante in der Erstellung und Verwaltung von Software wird als
+                            Concurrent Versions System (CVS) bezeichnet. Dieses System wurde stetig weiterentwickelt und
+                            wird in
+                            vielen verschiedenen Repositories wie zum Beispiel Subversion, GitHub oder SourceForge.net
+                            verwendet. Das Prinzip besteht darin, dass eine Datei aus dem Repository geladen wird
+                            (auschecken),
+                            um sie zu bearbeiten und anschließend wieder in das Projektarchiv hochzuladen (einchecken).
+                            Jegliche
+                            Veränderungen an Dateien werden in einem Protokoll festgehalten und sind einsehbar sowie
+                            veränderbar.</p>
+                    </div>
+                    <div id="variante_metadaten">
+                        <img id="meta" src="img/data.png" alt="metadata">
+                        <p><b>Repository für Metadaten</b></p>
+                        <p>Bei komplexen IT-Infrastrukturen werden Repositories dazu benutzt, bestimmte Funktionen und
+                            Systembausteine
+                            in die Infrastruktur zu integrieren. Sogenannte hochintegrative Systeme erfordern
+                            Repositories,
+                            die das
+                            gesamte System selbst beschreiben und Daten über die informationstechnische Umwelt oder
+                            Peripherie
+                            enthalten. Muss das System auf Veränderungen reagieren, kann es dies dank eines
+                            Metaansatzes,
+                            der als
+                            'definieren statt programmieren' beschrieben wird. Denn durch Metadaten-Repositories ist es
+                            dem
+                            System
+                            möglich, auf Veränderungen schnell und unkompliziert zu reagieren, ohne dass für diese
+                            Änderungen Quellcode
+                            oder Programme geschrieben werden müssen. Insbesondere in Data Warehouses,
+                            serviceorientierten
+                            Architekturen
+                            (SOA), Enterprise Application Integration Architekturen (EAI) und auch im Cloud Computing
+                            kommen
+                            derartige
+                            Repositories zum Einsatz.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+
+        <aside>
+            <h1>Übersicht</h3>
+                <ul style="list-style-type:none;">
+                    <li>Übersicht</li>
+                    <li>Repository
+                        <ul style="list-style-type:none;">
+                            <li>Allgemeines</li>
+                            <li>Arten von Repositories</li>
+                        </ul>
+                    </li>
+                </ul>
+        </aside>
+
+        <footer>
+            <img id="tipp" src="img/idea.png" alt="tipp">
+            <p>Als kleine Hilfestellung habe ich dir <a href="https://www.youtube.com/watch?time_continue=6&v=9A26ybw6tGY&embeds_euri=https%3A%2F%2Fbuiltin.com%2F&source_ve_path=MjM4NTE&feature=emb_title">hier</a> noch ein interessantes Erklärvideo verlinkt. Nur für die ganz fleißigen Bienen unter euch. Viel Spaß beim Coden, wie die Weltmeister.</p>
+        </footer>
     </div>
 </body>
 
