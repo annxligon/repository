@@ -65,6 +65,10 @@
         grid-area: content;
     }
 
+    aside {
+        padding-top: 50px;
+    }
+
     #intro {
        margin-top: 40%;
     }

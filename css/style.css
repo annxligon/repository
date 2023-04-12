@@ -1,5 +1,5 @@
 * {
-    font-family: "SchibstedGrotesk", Arial, sans-serif;
+    font-family: "Schibsted Grotesk", Arial, sans-serif;
     font-size: 1em
 }
 
@@ -16,7 +16,7 @@ h3 {
 
 h2 {
     text-transform: uppercase;
-    font-size: 200%; 
+    font-size: 200%;
 }
 
 h1 {
@@ -24,20 +24,38 @@ h1 {
     font-size: 1.2rem;
 }
 
+button {
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 70%;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+button:active {
+    border: solid darkgrey;
+}
+
 #home-button {
     height: 33px;
     cursor: pointer;
 }
 
-
-
 header {
     grid-area: kopfzeile;
+    display: flex;
+    justify-content: space-between;
+    grid-area: kopfzeile;
 }
-
-
-
-
 
 article {
     position: relative;
@@ -51,14 +69,9 @@ article {
     position: relative;
 }
 
-#ablauf, #meta {
+#ablauf,
+#meta {
     width: 100px;
-}
-
-header {
-    display: flex;
-    justify-content : space-between;
-    grid-area: kopfzeile;
 }
 
 #banner {
@@ -77,6 +90,10 @@ aside {
     padding-left: 50px;
     padding-right: 20px;
     padding-bottom: 20px;
+}
+
+li {
+    margin-top: 5px;
 }
 
 footer {
@@ -105,7 +122,6 @@ a:hover {
     transition: 0.8s
 }
 
-
-
-
-
+a:active {
+    opacity: 0.3;
+}
