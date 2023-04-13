@@ -73,6 +73,7 @@ article {
 #ablauf,
 #meta {
     width: 100px;
+    margin-top: 20px;
 }
 
 #banner {
@@ -101,6 +102,10 @@ footer {
     grid-area: fusszeile;
     background-color: rgb(226, 225, 225);
     padding: 50px;
+    
+}
+
+#video {
     display: flex;
     justify-content: space-between;
 }
@@ -125,4 +130,11 @@ a:hover {
 
 a:active {
     opacity: 0.3;
+}
+
+#author {
+    font-size: smaller;
+    color: darkgrey;
+    margin-top: 40px;
+    text-align: center;
 }
