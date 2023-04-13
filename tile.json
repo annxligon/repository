@@ -1,8 +1,8 @@
 {
     "title": "Repository",
     "folder": "repository",
-    "description": "Eine ausführliche Erklärung zu Repositories",
-    "tags": ["data", "development", "coding", "team"],
+    "description": "Ein Repository ist eine zentrale Ablage in dem digitale Daten verwaltet werden.",
+    "tags": ["Code Management", "Software Development", "Collaboration", "Data"],
     "author": "Anna Ligon",
     "github": "https://github.com/annxligon/repository.git"
     }
